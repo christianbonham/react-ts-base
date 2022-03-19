@@ -7,8 +7,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={PageFramework}>
+        <Route path="/" element={<PageFramework />}>
           <Route index element={<h1>It Works</h1>} />
+          <Route path="*" element={<h2>404 Not Found</h2>} />
         </Route>
       </Routes>
     </BrowserRouter>
